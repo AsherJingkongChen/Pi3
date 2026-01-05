@@ -1,0 +1,22 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0", "wheel"]
+
+[project]
+dependencies = [
+    "huggingface-hub>=1.2.3",
+    "numpy>=1.26.4,<2",
+    "opencv-python>=4.11.0.86",
+    "pillow>=12.0.0",
+    "plyfile>=1.1.3",
+    "safetensors>=0.7.0",
+    "torch>=2.5.1",
+    "torchvision>=0.20.1",
+]
+name = "pi3"
+requires-python = ">=3.10"
+version = "0.0.1"
+
+[tool.setuptools.packages.find]
+include = ["pi3*"]
+where = ["."]
